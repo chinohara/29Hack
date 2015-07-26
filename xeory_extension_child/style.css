@@ -23,6 +23,23 @@ Theme URI: http://192.168.2.100:8888/wp-content/themes/xeory_extension_child
 
 @import url('../xeory_extension/style.css');
 
+/* GoogleMapのサイズを画面サイズに合わせる */
+.map {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* headerの文字カラーとフォント対応 */
 .top {
   color: #E9872E;
